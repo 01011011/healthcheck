@@ -44,6 +44,7 @@ namespace Humongous.Healthcare.Controllers
             return CreatedAtAction(nameof(Get), new { id = item.id }, item);
         }
 
+
         // PUT /HealthCheck/23dbf68d-3f40-41de-ae1b-8e3558cd17f9
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit([FromBody] HealthCheck item)
@@ -64,7 +65,7 @@ namespace Humongous.Healthcare.Controllers
         [Route("GetStatus")]
         public HealthCheck GetStatus()
         {
-            var symptoms = new string[]{"Hair loss", "Internal bleeding", "Temporary blindness", "Ennui"};
+            var symptoms = new string[]{"Hair loss", "Internal bleeding", "Temporary blindness", "Ennui", "Testing GitHub"};
 
             HealthCheck hc = new HealthCheck();
             hc.id = Guid.NewGuid().ToString();
