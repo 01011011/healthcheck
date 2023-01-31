@@ -65,7 +65,7 @@ namespace Humongous.Healthcare.Controllers
         [Route("GetStatus")]
         public HealthCheck GetStatus()
         {
-            var symptoms = new string[]{"Hair loss", "Internal bleeding", "Temporary blindness", "Ennui", "Testing GitHub"};
+            var symptoms = new string[]{"Hair loss", "Internal bleeding", "Temporary blindness", "Ennui", "Showing For Team 1"};
 
             HealthCheck hc = new HealthCheck();
             hc.id = Guid.NewGuid().ToString();
